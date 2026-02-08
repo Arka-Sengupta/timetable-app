@@ -2,6 +2,11 @@
 
 # dependencies
 node_modules/
+.pnp
+.pnp.js
+
+# testing
+coverage/
 
 # Expo
 .expo/
@@ -35,8 +40,6 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
-
-app-example
 
 # generated native folders
 /ios
