@@ -1,3 +1,7 @@
+# Timetable App
+![Alt text](app/assets/images/logo.png)
+
+
 ## File Tree
 
 
