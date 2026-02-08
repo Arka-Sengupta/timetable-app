@@ -1,50 +1,61 @@
-# Welcome to your Expo app 👋
+## File Tree
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
 ```
+├── 📁 app
+│   ├── 📁 (tabs)
+│   │   ├── 📄 _layout.tsx
+│   │   ├── 📄 index.tsx
+│   │   └── 📄 mess.tsx
+│   ├── 📁 assets
+│   │   ├── 📁 images
+│   │   │   ├── 🖼️ favicon.png
+│   │   │   ├── 🖼️ icon.png
+│   │   │   ├── 🖼️ logo.png
+│   │   │   ├── 🖼️ partial-react-logo.png
+│   │   │   ├── 🖼️ react-logo.png
+│   │   │   ├── 🖼️ react-logo@2x.png
+│   │   │   ├── 🖼️ react-logo@3x.png
+│   │   │   ├── 🖼️ splash-icon.png
+│   │   │   └── 🖼️ splash.png
+│   │   ├── 📄 data.csv
+│   │   └── 📄 timetable.csv
+│   ├── 📄 _layout.tsx
+│   └── 📄 calendar.tsx
+├── 📁 components
+│   └── 📄 ClassNoteItem.tsx
+├── 📁 constants
+│   └── 📄 theme.ts
+├── 📁 hooks
+│   ├── 📄 useMessMenu.js
+│   ├── 📄 useNotes.js
+│   └── 📄 useTimetable.js
+├── 📁 utils
+│   └── 📄 getCurrentClass.js
+├── ⚙️ .gitignore
+├── 📝 README.md
+├── ⚙️ app.json
+├── ⚙️ eas.json
+├── 📄 eslint.config.js
+├── 📄 index.js
+├── 📄 metro.config.js
+├── ⚙️ package-lock.json
+├── ⚙️ package.json
+└── ⚙️ tsconfig.json
+```
+# Note: App is hardcoded for Arka Sengupta's data using timetable.csv and data.csv(for mess data), follow the steps if you want to use it for your own purpose
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+1. in your terminal run `git clone https://github.com/Arka-Sengupta/timetable-app`
+2. `cd timetable-app`
+3. `npm install`
+4. download expo go in your phone or android emulator in your pc
+5. convert your timetable to csv format and save it as `timetable.csv` in the `app/assets` folder
+6. convert your mess data to csv format and save it as `data.csv` in the `app/assets` folder
+7. Follow the format of my timetable.csv and data.csv to create your own timetable.csv and data.csv
+8. run `npx expo start` in your terminal
+9. scan the qr code in your phone or emulator
+10. Enjoy the app
 
-## Learn more
+If you want to just see how the app is working so you can just install the provided apk file the releases section, it has my data
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+If you also want to make an .apk/.aab for your build, contact me at [my email](arka.sengupta.06@gmail.com)
