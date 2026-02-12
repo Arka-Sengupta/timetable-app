@@ -6,9 +6,12 @@ const { getDefaultConfig } = require('expo/metro-config');
  */
 const config = getDefaultConfig(__dirname);
 
-// Ensure CSV files are treated as assets so they can be required and loaded
+// Ensure CSV and PDF files are treated as assets so they can be required and loaded
 if (!config.resolver.assetExts.includes('csv')) {
   config.resolver.assetExts.push('csv');
+}
+if (!config.resolver.assetExts.includes('pdf')) {
+  config.resolver.assetExts.push('pdf');
 }
 
 module.exports = config;

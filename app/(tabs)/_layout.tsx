@@ -48,6 +48,19 @@ export default function TabLayout() {
                     ),
                 }}
             />
+            <Tabs.Screen
+                name="subjects"
+                options={{
+                    title: 'Subjects',
+                    tabBarIcon: ({ color, size, focused }) => (
+                        <Ionicons
+                            name={focused ? "school" : "school-outline"}
+                            size={size}
+                            color={color}
+                        />
+                    ),
+                }}
+            />
         </Tabs>
     );
 }
